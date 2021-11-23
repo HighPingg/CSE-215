@@ -1,0 +1,148 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.1)  27 FEB 2021 00:44
+entering extended mode
+**"d:/CSE 215 - Homework/CSE 215 - Homework 2/CSE 215 - Homework 2.tex"
+("d:/CSE 215 - Homework/CSE 215 - Homework 2/CSE 215 - Homework 2.tex"
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03> ("D:\Program Files\MiKTeX\tex/latex/base\article.cls"
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+("D:\Program Files\MiKTeX\tex/latex/base\size12.clo"
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) ("D:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty"
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks15
+\labelindent=\skip49
+\enit@outerparindent=\dimen139
+\enit@toks=\toks16
+\enit@inbox=\box47
+\enit@count@id=\count185
+\enitdp@description=\count186
+) ("D:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ ("D:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) ("D:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ ("D:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) ("D:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty"
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ ("D:\Program Files\MiKTeX\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("D:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ ("D:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
+) ("D:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
+File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count187
+\l__pdf_internal_box=\box48
+) ("d:/CSE 215 - Homework\CSE 215 - Homework 2\CSE 215 - Homework 2.aux")
+\openout1 = `"CSE 215 - Homework 2.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+ ("D:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count188
+\scratchdimen=\dimen142
+\scratchbox=\box49
+\nofMPsegments=\count189
+\nofMParguments=\count190
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count191
+\MPscratchDim=\dimen143
+\MPnumerator=\count192
+\makeMPintoPDFobject=\count193
+\everyMPtoPDFconversion=\toks20
+) ("D:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+ ("D:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+ ("D:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/Users/Vincent Zheng/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
+<8-22.png, id=17, 562.35094pt x 562.35094pt>
+File: 8-22.png Graphic file (type png)
+<use 8-22.png>
+Package pdftex.def Info: 8-22.png  used on input line 112.
+(pdftex.def)             Requested size: 168.70657pt x 168.70657pt.
+<8-23.png, id=19, 550.30594pt x 356.83313pt>
+File: 8-23.png Graphic file (type png)
+<use 8-23.png>
+Package pdftex.def Info: 8-23.png  used on input line 115.
+(pdftex.def)             Requested size: 165.09305pt x 107.05075pt.
+<8-24.png, id=20, 542.025pt x 328.22626pt>
+File: 8-24.png Graphic file (type png)
+<use 8-24.png>
+Package pdftex.def Info: 8-24.png  used on input line 120.
+(pdftex.def)             Requested size: 162.60875pt x 98.46863pt.
+ [3 <d:/CSE 215 - Homework/CSE 215 - Homework 2/8-22.png> <d:/CSE 215 - Homework/CSE 215 - Homework 2/8-23.png>]
+<8-26.png, id=26, 514.92375pt x 514.92375pt>
+File: 8-26.png Graphic file (type png)
+<use 8-26.png>
+Package pdftex.def Info: 8-26.png  used on input line 124.
+(pdftex.def)             Requested size: 154.4783pt x 154.4783pt.
+<8-27.png, id=27, 574.39594pt x 333.49594pt>
+File: 8-27.png Graphic file (type png)
+<use 8-27.png>
+Package pdftex.def Info: 8-27.png  used on input line 128.
+(pdftex.def)             Requested size: 172.3201pt x 100.04955pt.
+ [4 <d:/CSE 215 - Homework/CSE 215 - Homework 2/8-24.png> <d:/CSE 215 - Homework/CSE 215 - Homework 2/8-26.png> <d:/CSE 215 - Homework/CSE 215 - Homework 2/8-27.png>] ("d:/CSE 215 - Homework\CSE 215 - Homework 2\CSE 215 - Homework 2.aux") ) 
+Here is how much of TeX's memory you used:
+ 2083 strings out of 479618
+ 29947 string characters out of 2874877
+ 303434 words of memory out of 3000000
+ 19266 multiletter control sequences out of 15000+200000
+ 411579 words of font info for 59 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 68i,6n,74p,264b,212s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "d:/CSE 215 - Homework\CSE 215 - Homework 2\CSE 215 - Homework 2.pdf" (4 pages, 196916 bytes).
+PDF statistics:
+ 62 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+

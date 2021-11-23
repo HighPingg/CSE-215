@@ -1,0 +1,169 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+
+\author{Vincent Zheng}
+
+\begin{document}
+
+\title{CSE 215 - Homework 5}
+\maketitle
+
+\section*{Problem Set 1}
+\begin{enumerate}[label = 25\alph*.]
+
+    \item
+        $R_1 = \{x \in \mathbb{R} | 1 \leq x \leq 1 + \frac{1}{1}\} = [1, 2]$ \\
+        $R_2 = \{x \in \mathbb{R} | 1 \leq x \leq 1 + \frac{1}{2}\} = [1, \frac{3}{2}]$ \\
+        $R_3 = \{x \in \mathbb{R} | 1 \leq x \leq 1 + \frac{1}{3}\} = [1, \frac{4}{3}]$ \\
+        $R_4 = \{x \in \mathbb{R} | 1 \leq x \leq 1 + \frac{1}{4}\} = [1, \frac{5}{4}]$ \\
+        $\bigcup\limits_{i=1}^{4} R_i = [1, 2]$
+    \item 
+        $\bigcap\limits_{i=1}^{4} R_i = [1, \frac{5}{4}]$
+    \item 
+        No, $R_1, R_2, R_3 ...$ aren't mutually disjoint because they all contain at least 1.
+        Not to mention, if they are mutually disjoint, 25b should be a null set, but it 
+        clearly doesn't result in one.
+    \item
+        $\bigcup\limits_{i=1}^{n} R_i = [1, 2]$
+    \item 
+        $\bigcap\limits_{i=1}^{n} R_i = [1, \frac{n + 1}{n}]$
+    \item 
+        $\bigcup\limits_{i=1}^{\infty} R_i = [1, 2]$
+    \item 
+        $\bigcap\limits_{i=1}^{n} R_i = \{1\}$
+
+\end{enumerate}
+
+\section*{Problem Set 2}
+\begin{enumerate}[label = 26\alph*.]
+
+    \item 
+        $R_1 = \{x \in \mathbb{R} | 1 < x < 1 + \frac{1}{1}\} = (1, 2)$ \\
+        $R_2 = \{x \in \mathbb{R} | 1 < x < 1 + \frac{1}{2}\} = (1, \frac{3}{2})$ \\
+        $R_3 = \{x \in \mathbb{R} | 1 < x < 1 + \frac{1}{3}\} = (1, \frac{4}{3})$ \\
+        $R_4 = \{x \in \mathbb{R} | 1 < x < 1 + \frac{1}{4}\} = (1, \frac{5}{4})$ \\
+        $\bigcup\limits_{i=1}^{4} R_i = (1, 2)$
+    \item
+        $\bigcap\limits_{i=1}^{4} R_i = (1, \frac{5}{4})$
+    \item 
+        They are not mutually disjoint. Take $R_1$ and $R_2$. $R_1$ goes from 1 to 2, which
+        includes all the numbers from $R_2$ which is from 1 to $\frac{3}{2}$. Since there is
+        overlap, these sets can not be disjoint, therefore the collection can not be mutually
+        disjoint.
+    \item
+        $\bigcup\limits_{i=1}^{n} R_i = (1, 2)$
+    \item 
+        $\bigcap\limits_{i=1}^{n} R_i = (1, \frac{n + 1}{n})$
+    \item 
+        $\bigcup\limits_{i=1}^{\infty} R_i = (1, 2)$
+    \item 
+        $\bigcap\limits_{i=1}^{n} R_i = \{\phi\}$
+
+\end{enumerate}
+
+\section*{Problem Set 3}
+\begin{enumerate}[label = 33\alph*.]
+    \item 
+        $\mathscr{P}(\phi) = \{\phi\}$
+    \item 
+        $\mathscr{P}(\mathscr{P}(\phi)) = \{\phi, \{\phi\}\}$
+    \item 
+        $\mathscr{P}(\mathscr{P}(\mathscr{P}(\phi))) = \{\phi, \{\phi\}, \{\{\phi\}\},
+        \{\phi, \{\phi\}\} \}$
+\end{enumerate}
+
+\begin{enumerate}[label = 34\alph*.]
+    \item 
+        $A_1 \times (A_2 \times A_3)$ \\
+        = $A_1 \times (\{u, v\} \times \{m, n\})$ \\
+        = $\{1, 2, 3\} \times \{(u, m), (u, n), (v, m), (v, n)\}$ \\
+        = $\{$(1, (u, m)), (1, (u, n)), (1, (v, m)), (1, (v, n)),
+          (2, (u, m)), (2, (u, n)), (2, (v, m)), (2, (v, n)),
+          (3, (u, m)), (3, (u, n)), (3, (v, m)), (3, (v, n))$\}$
+    \item 
+        $(A_1 \times A_2) \times A_3$ \\
+        = $(\{1, 2, 3\} \times \{u, v\}) \times A_3$ \\
+        = $\{(1, u), (1, v), (2, u), (2, v), (3, u), (3, v)\} \times \{m, n\}$ \\
+        = $\{$((1, u), m), ((1, u), n), ((1, v), m), ((1, v), n), 
+          ((2, u), m), ((2, u), n), ((2, v), m), ((2, v), n), 
+          ((3, u), m), ((3, u), n), ((3, v), m), ((3, v), n)$\}$
+    \item 
+        $A_1 \times A_2 \times A_3$ \\
+        = $\{1, 2, 3\} \times \{u, v\} \times \{m, n\}$ \\
+        = $\{$(1, u, m), (1, u, n), (1, v, m), (1, v, n), 
+          (2, u, m), (2, u, n), (2, v, m), (2, v, n), 
+          (3, u, m), (3, u, n), (3, v, m), (3, v, n)$\}$
+\end{enumerate}
+
+\section*{Problem Set 4}
+\begin{itemize}
+    \item [10.]
+        Proof that $(A - B) \cap (C - B) = (A \cap C) - B$. \\
+        \\
+        Proof that $(A - B) \cap (C - B) \subseteq (A \cap C) - B$ \\
+        Suppose $x \in (A - B) \cap (C - B)$ \\
+        $x \in (A - B)$ and $x \in (C - B)$ \hspace{3em}
+            ($\because$ Definition of Intersection) \\
+        $x \in A$ and $x \notin B$ and $x \in C$ and $x \notin B$ \\
+        $x \in A$ and $x \in C$ and $x \notin B$ and $x \notin B$ \hspace{2em}
+            ($\because$ Commutative Property) \\
+        $x \in A$ and $x \in C$ and $x \notin B$ \hspace{2em} ($\because$ Impodent Law) \\
+        ($x \in A$ and $x \in C$) and $x \notin B$ \hspace{2em} ($\because$
+            Associative Property) \\
+        $x \in (A \cap C) - B$ \\
+        \\
+        Proof that $(A \cap C) - B \subseteq (A - B) \cap (C - B)$ \\
+        Suppose $x \in (A \cap C)$ and $x \notin B$ \\
+        $x \in A$ and $x \in C$ \hspace{6em} ($\because$ Definition of Intersection) \\
+        $x \in A$ and $x \notin B$, then $x \in (A - B)$ \\
+        $x \in C$ and $x \notin B$, then $x \in (C - B)$ \\
+        $x \in (A - B) \cap (C - B)$ \hspace{4em} ($\because$ Definition of Intersection)\\
+\end{itemize}
+
+\section*{Problem Set 5}
+\begin{itemize}
+    \item [19.]
+        Proof that $A \times (B \cap C) = (A \times B) \cap (A \times C)$. \\
+        \\
+        Proof that $A \times (B \cap C) \subseteq (A \times B) \cap (A \times C)$ \\
+        Suppose $(x, y) \in A \times (B \cap C)$ \\
+        $x \in A$ and $y \in (B \cap C)$ \hspace{5em} ($\because$ Definition of Cartesian
+            Product) \\
+        $y \in B$ and $y \in C$ \hspace{6em} ($\because$ Definition of Intersection) \\
+        $(x, y) \in (A \times B)$ \hspace{7em} ($\because$ $x \in A$ and $y \in B$) \\
+        $(x, y) \in (A \times C)$ \hspace{7em} ($\because$ $x \in A$ and $y \in C$) \\
+        $(A \times B) \cap (A \times C)$ \\
+        \\
+        Proof that $(A \times B) \cap (A \times C) \subseteq A \times (B \cap C)$ \\
+        Suppose $(x, y) \in (A \times B) \cap (A \times C)$ \\
+        $(x, y) \in (A \times B)$ and $(x, y) \in (A \times C)$ \hspace{2em} ($\because$
+            Definition of Intersection) \\
+        $x \in A$ and $y \in B$ and $x \in A$ and $y \in C$ \hspace{3em} ($\because$
+            Definition of Cartesian Product) \\
+        $x \in A$ and $x \in A$ and $y \in B$ and $y \in C$ \hspace{3em} ($\because$
+            Commutative Property) \\
+        $x \in A$ and $y \in B$ and $y \in C$ \hspace{3em} ($\because$ Impodent Law) \\
+        $A \times (B \cap C)$
+\end{itemize}
+
+\section*{Problem Set 6}
+\begin{itemize}
+    \item [34.]
+        Proof that if $B \cap C \subseteq A$, then $(C - A) \cap (B - A) = \phi$. \\
+        \\
+        Suppose not. Suppose $B \cap C \subseteq A$ and $(C - A) \cap (B - A) \neq \phi$ \\
+        \\
+        Suppose $x \in (C - A) \cap (B - A)$ \\
+        $x \in (C - A)$ and $x \in (B - A)$ \hspace{5em} ($\because$ Definition of Intersection) \\
+        $x \in C$ and $x \in B$, but $x \notin A$ \\
+        \\
+        However, $B \cap C \subseteq A$ is assumed to be true and $x\notin A$ means that
+        $x \notin (B \cap C)$, therefore we arrive at a contradiction. \\
+        \\
+        This means this statement is false and the original statement must be true.
+
+\end{itemize}
+
+\end{document}

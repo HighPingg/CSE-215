@@ -1,0 +1,247 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{cancel}
+\author{Vincent Zheng}
+
+\begin{document}
+
+\title{CSE 215 - Homework 2}
+\maketitle
+
+\section*{Problem Set 1}
+\begin{itemize}
+    \item [52.]
+        Let m = 3. $3^2$ - 4 = 5. 5 is prime and not composite, thus this statement is
+        false.
+    \item [53.]
+        Let n = 11. $(11)^2$ - 11 + 11 = 121. 121 is not prime as it is divisible by 11,
+        thus this statement is false.
+\end{itemize}
+
+\section*{Problem Set 2}
+\begin{itemize}
+    \item [61.]
+        m + n + 2$\sqrt{mn}$ \\
+        Let $a^2$ = m and $b^2$ = n. \\
+        = $a^2$ + $b^2$ + 2$\sqrt{a^2 b^2}$ (Substitution in for m and n)\\
+        = $a^2$ + $b^2$ + 2ab (Simplifying $\sqrt{a^2 b^2}$) \\
+        = $a^2$ + 2ab + $b^2$ (Commutative Property of Addition) \\
+        = $(a + b)^2$ (Factoring $a^2$ + 2ab + $b^2$) \\
+        Let (a + b) = x. \\
+        = $x^2$ (Substitution in for (a + b)) \\
+        true because $x^2$ can always be written by a product of x and x.
+\end{itemize}
+
+\section*{Problem Set 3}
+\begin{itemize}
+    \item [30.]
+        $x^2$ + bx + c = (x - r)(x - s) (Given in question) \\
+        = $x^2$ - rx - sx + rs (Expanding (x - r)(x - s)) \\
+        = c = rs (The two constants of the 2 polynomials must be equal). \\
+        Supppose r is rational. \\
+        = s = $\frac{c}{r}$ (Divide both sides by r) \\
+        Since both c and r are both rational, then s must also be rational since it's
+        the quotient of both c and r.
+\end{itemize}
+
+\section*{Problem Set 4}
+\begin{itemize}
+    \item [38.]
+        This person never proved that $\frac{a}{b} + \frac{c}{d}$ is equal to a
+        fraction where both the numerator and denominator are both integers.
+    \item [39.]
+        Never proved r + s is rational. Uses the assumption that r + s is rational
+        in the equation.
+\end{itemize}
+
+\section*{Problem Set 5}
+\begin{itemize}
+    \item [30.]
+        If a $\mid$ $n^2$, then $n^2$ is a factor of a (By definition) \\
+        n is a factor of $n^2$ (n $\times$ n = $n^2$) \\
+        n is a factor of a (By transitivity) \\
+        $\therefore$ a $\mid$ n (By definition)
+\end{itemize}
+
+\section*{Problem Set 6}
+\begin{itemize}
+    \item [34.]
+        No it isn't possible because nickels are 0.05, quarters are 0.25, and dimes
+        are 0.10 and quarters = 5 nickels and dimes = 2 nickels. 4.72 doesn't have
+        a factor of 0.05 because 4.72 $\%$ 0.05 $\neq$ 0, thus it can't be written as
+        a multiple of 0.05 and thus, can't be written as a combination of nickels or
+        and of the other coins stated.
+\end{itemize}
+
+\section*{Problem Set 7}
+\begin{itemize}
+    \item  [35.]
+        40 is the least common multiple of both 8 and 10, therefore 4:00 + 40 = 4:40PM
+        will be the first time the two will meet at the start line after beginning.
+\end{itemize}
+
+\section*{Problem Set 8}
+\begin{itemize}
+    \item [42c.]
+        8 zeroes. In 20!, there contains 4 multiples of 5 (5, 10, 15, and 20) and each
+        of these can produce a zero (5 $\times$ 2 = 10 and 15 $\times$ 4 = 60). If we
+        then multiply this by 2 due to the number being squared, we get 8 zeroes.
+\end{itemize}
+
+\section*{Problem Set 9}
+\begin{itemize}
+    \item [43.]
+        102 men and 170 women. Since 2/3 of the men must be married, the number of men
+        must be divisible by 3 since the only way to get rid of the denominator of 3
+        is to get a number which is a multiple of 3. Thus the least integer closest to
+        100 is 102. To find the number of women, we know that there are 102 married
+        women and 3/5 of the total number of women are married. We have to divide 102 by
+        3/5 to get the total number of women in the town since it must fit the ratio of
+        $\frac{102}{x} : \frac{3}{5}$.
+\end{itemize}
+
+\section*{Problem Set 10}
+\begin{itemize}
+    \item [30a.]
+        Case num $\%$ 3 == 0, then the number can be written as 3k (since it's divisible
+        or a multiple of 3) and the next number would be 3k + 1. \\
+        \\
+        3k(3k + 1) (First and Second Number Multiplied) \\
+        = 9$k^2$ + 3k (Expanded Form) \\
+        = 3(3$k^2$ + k) (Factor Out 3) \\
+        = 3l (If we substitute in l = 3$k^2$ + k) \\
+        \\
+        Case num $\%$ 3 == 1, then the number can be written as 3k + 1 (since the
+        previous number is divisible or a multiple of 3) and the next number would be
+        3k + 2. \\
+        \\
+        = (3k + 1)(3k + 2) (Multiplying the two numbers) \\
+        = 9$k^2$ + 9k + 2 (Expanded Form) \\
+        = 3(3$k^2$ + 3k) + 2 (Factor out 3) \\
+        = 3l + 2 (If we substitute in l = 3$k^2$ + 3k) \\
+        \\
+        \\
+        Case num $\%$ 3 == 2, then the number can be written as 3k + 2 (since the
+        previous previous number is divisible or a multiple of 3) and the next number
+        would be 3k + 3. \\
+        \\
+        = (3k + 2)(3k + 3) (Multiplying the two numbers) \\
+        = 9$k^2$ + 15k + 6 (Expanded Form) \\
+        = 3(3$k^2$ + 5k + 2) (Factor out 3) \\
+        = 3l (If we substitute in l = 3$k^2$ + 5k + 2) \\
+        \\
+        As we can see all the possible solutions can be written as either 3l or 3l + 2
+        and thus, this statement is true.
+\end{itemize}
+
+\section*{Problem Set 11}
+\begin{itemize}
+    \item [31a.]
+    \item []
+        \begin{itemize}
+            \item [Case 1(Both even):]
+                even + even = even \\
+                even - even = even
+            \item [Case 2(Both odd):]
+                odd + odd = even \\
+                odd - odd = even
+            \item [Case 3(m even n odd):]
+                even + odd = odd \\
+                even - odd = odd
+            \item [Case 4(m odd n even):]
+                odd + even = odd \\
+                odd - even = odd
+        \end{itemize}
+    As we can see above, in each of the cases, the outcomes are always either both even
+    or both false, thus this statement is true.
+\end{itemize}
+
+\section*{Problem Set 12}
+\begin{itemize}
+    \item [40.]
+        = n(n - 1)(n + 1)(n + 2) (Factoring $n^2$ - 1) \\
+        = (n - 1) n (n + 1)(n + 2) (Commutative Property) \\
+        As we can see, these are all consective numbers where n - 1 is the first
+        number followed by n, then n + 1, then n + 2. They are all also being multiplied
+        Regardless of the value of n, one of these numbers will always be a multiple of
+        4 since it's 4 consective numbers, and they're being multiplied with eachother
+        which means the product will also always be a multiple of 4 and, thus divisible
+        by 4.
+\end{itemize}
+
+\section*{Problem Set 13}
+\begin{itemize}
+    \item [24a.]
+        The reciprocal of any irrational number is irrational. \\
+        = If a number is rational, then its reciprocal is rational. (Contrapositive) \\
+        \\
+        x = $\frac{a}{b}$ (By definition, if a number is rational there there must be
+                            a ratio of integers with a non-zero denominator). \\
+        = bx = a (Cross multiplying) \\
+        = $\frac{bx}{a}$ = 1 (Divide both sides by a) \\
+        = $\frac{b}{a}$ = $\frac{1}{x}$ (Divide both sides by x) \\
+        \\
+        Since the reciprocal of x ($\frac{1}{x}$) is equal to a ratio of 2 integers b
+        and a, then by definition, its reciprocal is rational. This makes the statement
+        that "If a number is rational, then its reciprocal is rational" true and therefore
+        its contrapositive is also true.
+    \item [24b.]
+        If the reciprocal of a number is irrational, the number is irrational. \\
+        = The reciprocal of a number is irrational and the number is rational. (Negation) \\
+        \\
+        x = $\frac{a}{b}$ (By definition, if a number is rational there there must be
+        a ratio of integers with a non-zero denominator). \\
+        = bx = a (Cross multiplying) \\
+        = $\frac{bx}{a}$ = 1 (Divide both sides by a) \\
+        = $\frac{b}{a}$ = $\frac{1}{x}$ (Divide both sides by x) \\
+        \\
+        Therefore, $\frac{1}{x}$ is rational by definition since it can be written as
+        a ratio between non zero integers. There is a contradiction. The reciprocal of
+        x cannot be both rational and irrational making this statement false, and thus
+        the negation of this statement/the original statement must be true.
+\end{itemize}
+
+\section*{Problem Set 14}
+\begin{itemize}
+    \item [31b.]
+        For all integers n $\>$ 1, if n is not prime, then there exists a prime number
+        p such that p $\leq$ $\sqrt{n}$ and n is divisible by p. \\
+        = For all integers n $>$ 1, if a prime number p is $>$ $\sqrt{n}$ or n is not
+        divisible by p, then n is prime. (Contrapositive)\\
+        \\
+        Since a number is never divisible by p when p is $>$ $\sqrt{n}$, then this
+        statement is true meaning its contrapositive or the original statement is true.
+\end{itemize}
+
+\section*{Problem Set 15}
+\begin{itemize}
+    \item [33.]
+        \begin{tabular}{cccccccccc}
+               & $\cancel{2}$  & 3  & $\cancel{4}$  & 5  & $\cancel{6}$  & 7  & $\cancel{8}$  & $\cancel{9 }$ & $\cancel{10}$ \\
+            11 & $\cancel{12}$ & 13 & $\cancel{14}$ & $\cancel{15}$ & $\cancel{16}$ & 17 & $\cancel{18}$ & 19 & $\cancel{20}$ \\
+            $\cancel{21}$ & $\cancel{22}$ & 23 & $\cancel{24}$ & $\cancel{25}$ & $\cancel{26}$ & $\cancel{27}$ & $\cancel{28}$ & 29 & $\cancel{30}$ \\
+            31 & $\cancel{32}$ & $\cancel{33}$ & $\cancel{34}$ & $\cancel{35}$ & $\cancel{36}$ & 37 & $\cancel{38}$ & $\cancel{39}$ & $\cancel{40}$ \\
+            41 & $\cancel{42}$ & 43 & $\cancel{44}$ & $\cancel{45}$ & $\cancel{46}$ & 47 & $\cancel{48}$ & $\cancel{49}$ & $\cancel{50}$ \\
+            $\cancel{51}$ & $\cancel{52}$ & 53 & $\cancel{54}$ & $\cancel{55}$ & $\cancel{56}$ & $\cancel{57}$ & $\cancel{58}$ & 59 & $\cancel{60}$ \\
+            61 & $\cancel{62}$ & $\cancel{63}$ & $\cancel{64}$ & $\cancel{65}$ & $\cancel{66}$ & 67 & $\cancel{68}$ & $\cancel{69}$ & $\cancel{70}$ \\
+            71 & $\cancel{72}$ & 73 & $\cancel{74}$ & $\cancel{75}$ & $\cancel{76}$ & $\cancel{77}$ & $\cancel{78}$ & 79 & $\cancel{80}$ \\
+            $\cancel{81}$ & $\cancel{82}$ & 83 & $\cancel{84}$ & $\cancel{85}$ & $\cancel{86}$ & $\cancel{87}$ & $\cancel{88}$ & 89 & $\cancel{90}$ \\
+            $\cancel{91}$ & $\cancel{92}$ & $\cancel{93}$ & $\cancel{94}$ & $\cancel{95}$ & $\cancel{96}$ & 97 & $\cancel{98}$ & $\cancel{99}$ & $\cancel{100}$ \\
+        \end{tabular}
+\end{itemize}
+
+\section*{Problem Set 16}
+    In a number set of 1 trillion + 1 numbers, there will always be two numbers whose
+    difference is a multiple of 1 trillion. Every number in this set can be written as
+    (1 trillion) * n + (some remainder when the number is mod by 1 trillion). In order
+    for the number to be divisible by 1 trillion, the constants at the end of this
+    expression must be equal in order for the difference to be divisible by 1 trillion.
+    Since there are 1 trillion + 1 numbers, there will always be a set where these two
+    constants are equal since there are only 1 trillion different constants at the end
+    (since any number mod 1 trillion can only give a number within the range [1,
+    1 trillion)) and the + 1 ensures that there will be a duplicate.
+
+\end{document}

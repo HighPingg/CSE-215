@@ -1,0 +1,283 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+
+\author{Vincent Zheng}
+
+\begin{document}
+
+\title{CSE 215 - Homework 6}
+\maketitle
+
+\section*{Problem Set 1}
+\begin{itemize}
+    \item [28.]
+        For a function to be well-defined, it must have one output for every input.
+        Here, $h(\frac{m}{n}) = \frac{m^2}{n}$ is not well defined because: \\
+        \\
+        Take $\frac{1}{2}$ and $\frac{2}{4}$.\\
+        \\
+        $\frac{1}{2} = \frac{2}{4}$, however, if we plug these values into
+        $h(\frac{m}{n})$, we get $\frac{1}{2} = \frac{4}{4}$.\\
+        \\
+        $\frac{1}{2} \neq \frac{4}{4}$ which means equal inputs gives us different outputs,
+        thus, $h(\frac{m}{n})$ is not well defined.
+
+\end{itemize}
+
+\section*{Problem Set 2}
+\begin{itemize}
+    \item [35.]
+        Suppose there is an $y \in f(A \cap B)$, then there exists $x \in A \cap B$. \\
+        \\
+        By definition of intersection, $x \in A$ and $x \in B$ \\
+        Since $x \in A$, $y = f(x) \in f(A)$ \\
+        Since $x \in B$, $y = f(x) \in f(B)$ \\
+        \\
+        Thus, $y \in f(A) \cap (B)$ by definition of intersection.
+
+\end{itemize}
+
+\newpage
+
+\section*{Problem Set 3}
+\begin{itemize}
+    \item [41.]
+        Prove $F^{-1}(C - D) \subseteq F^{-1}(C) - F^{-1}(D)$ \\
+        \\
+        Suppose $x \in F^{-1}(C - D)$. \\
+        $y \in C - D$ \hspace{10em} ($\because$ Definition of function) \\
+        $y \in C$, but $y \notin D$ \hspace{8em} ($\because$ Definition of difference) \\
+        $x \in F^{-1}(C)$, but $x \notin F^{-1}(D)$ \hspace{3em} ($\because$ Definition
+            of function) \\
+        $x \in F^{-1}(C) - F^{-1}(D)$ \hspace{5em} ($\because$ Definition of differnece) \\
+        Thus, $F^{-1}(C - D) \subseteq F^{-1}(C) - F^{-1}(D)$.\\
+
+\end{itemize}
+
+\section*{Problem Set 4}
+\begin{itemize}
+    \item [43a.]
+        Case $\chi_{A \cap B}(u) = 0$ \\
+        $u \notin A \cap B$ \hspace{6em} ($\because$ Given by the function) \\
+        $u \notin A$ and $u \notin B$ \hspace{5em} ($\because$ By definition of
+            intersection) \\
+        $\chi_{A}(u) = 0$ and $\chi_{B}(u) = 0$ \hspace{2em} ($\because$ Given by the
+            function) \\
+        $\chi_{A}(u) \cdot \chi_{B}(u) = 0$ \hspace{4em} ($\because 0 \cdot 0 = 0$) \\
+        \\
+        Case $\chi_{A \cap B}(u) = 1$ \\
+        $u \in A \cap B$ \hspace{6em} ($\because$ Given by the function) \\
+        $u \in A$ and $u \in B$ \hspace{5em} ($\because$ By definition of
+            intersection) \\
+        $\chi_{A}(u) = 1$ and $\chi_{B}(u) = 1$ \hspace{2em} ($\because$ Given by the
+            function) \\
+        $\chi_{A}(u) \cdot \chi_{B}(u) = 1$ \hspace{4em} ($\because 1 \cdot 1 = 1$) \\
+        \\
+        These two properties hold, therefore $\chi_{A \cap B}(u) =
+            \chi_{A}(u) \cdot \chi_{B}(u)$
+
+    \item [43b.]
+        Case $u \in A$ and $B$ \\
+        This implies that $\chi_{A \cap B}(u) = 1$ since u can be in A or B. \\
+        $\chi_{A}(u) = 1$ and $\chi_{B}(u) = 1$ \hspace{3em} ($\because$ Defined by
+            the function) \\
+        $\chi_{A}(u) + \chi_{B}(u) - \chi_{A}(u) \cdot \chi_{B}(u) = 1 + 1 - 1 \cdot 1$
+            \hspace{2em} ($\because$ Plugging in values) \\
+        = 1 \\
+        \\
+        Case $u \in A$ and $u \notin B$ \\
+        This implies that $\chi_{A \cap B}(u) = 1$ since u can be in A or B by definition
+            of union. \\
+        $\chi_{A}(u) = 1$ and $\chi_{B}(u) = 0$ \hspace{3em} ($\because$ Defined by
+            the function) \\
+        $\chi_{A}(u) + \chi_{B}(u) - \chi_{A}(u) \cdot \chi_{B}(u) = 1 + 0 - 1 \cdot 0$
+            \hspace{2em} ($\because$ Plugging in values) \\
+        = 1 \\
+        \\
+        Case $u \notin A$ and $u \in B$ \\
+        This implies that $\chi_{A \cap B}(u) = 1$ since u can be in A or B by definition
+            of union. \\
+        $\chi_{A}(u) = 0$ and $\chi_{B}(u) = 1$ \hspace{3em} ($\because$ Defined by
+            the function) \\
+        $\chi_{A}(u) + \chi_{B}(u) - \chi_{A}(u) \cdot \chi_{B}(u) = 0 + 1 - 0 \cdot 1$
+            \hspace{2em} ($\because$ Plugging in values) \\
+        = 1 \\
+        \\
+        Case $u \notin A$ and $u \notin B$ \\
+        This implies that $\chi_{A \cap B}(u) = 0$ since u not in A or B \\
+        $\chi_{A}(u) = 0$ and $\chi_{B}(u) = 0$ \hspace{3em} ($\because$ Defined by
+            the function) \\
+        $\chi_{A}(u) + \chi_{B}(u) - \chi_{A}(u) \cdot \chi_{B}(u) = 0 + 0 - 0 \cdot 0$
+            \hspace{2em} ($\because$ Plugging in values) \\
+        = 0 \\
+        \\
+        Since this holds for all possible cases, $\chi_{A \cap B}(u) = \chi_{A}(u) +
+            \chi_{B}(u) - \chi_{A}(u) \cdot \chi_{B}(u)$
+
+\end{itemize}
+
+\section*{Problem Set 5}
+\begin{itemize}
+    \item [23a.]
+        Suppose $(x_1, y_1)$ and $(x_2, y_2)$ in $\mathbb{R} \times \mathbb{R}$, where
+        $H(x_1, y_1) = H(x_2, y_2)$.\\
+        \\
+        $(x_1 + 1, 2 - y_1) = (x_2 + 1, 2 - y_2)$ \hspace{3em} ($\because$ Defined by H) \\
+        $x_1 + 1 = x_2 + 1$ and $2 - y_1 = 2 - y_2$ \hspace{2em} ($\because$ Definition of
+            equality of ordered pairs) \\
+        \\
+        $x_1 + 1 = x_2 + 1$ \\
+        $= x_1 = x_2$ \hspace{5em} ($\because$ Subtract 1 from both sides) \\
+        \\
+        $2 - y_1 = 2 - y_2$ \\
+        $= - y_1 = - y_2$ \hspace{3em} ($\because$ Subtract 2 from both sides) \\
+        $= y_1 = y_2$ \hspace{3em} ($\because$ Divide 2 from both sides) \\
+        \\
+        $(x_1, y_1) = (x_2, y_2)$ \hspace{5em} ($\because$ Definition of equality of
+            ordered pairs) \\
+        \\
+        Hence, H is one-to-one.
+
+    \item [23b.]
+        Suppose (x, y) in the domain of H. \\
+        \\
+        Let r = x + 1 and s = 2 - y. \\
+        \\
+        H(r, s) \\
+        = H(x - 1, 2 - y) \hspace{6em} ($\because$ Definition of H) \\
+        = (x + 1 - 1, 2 - (2 - y)) \hspace{3em} ($\because$ Substitution) \\
+        = (x, y) \hspace{6em} ($\because$ Simplify) \\
+        \\
+        Hence, H is onto.
+
+\end{itemize}
+
+\section*{Problem Set 6}
+\begin{itemize}
+    \item [29.]
+        Suppose real numbers a, b and x are given with b $\neq$ 1. \\
+        $log_b(x^a)$ \\
+        = $log_b(x \cdot x \cdot ... \cdot x)$, where x is multiplied by itself a times. \\
+            ($\because$ Definition of exponent) \\
+        = $log_b(x) + log_b(x) + ... + log_b(x)$, where $log_b(x)$ is added a times \\
+            ($\because log_b(xy) = log_b(x) + log_b(y)$) \\
+        = $a \cdot log_b(x)$ \hspace{6em} ($\because$ Definition of multiplication)
+        
+\end{itemize}
+
+\section*{Problem Set 7}
+\begin{itemize}
+    \item [11.]
+        Given $H = H^{-1} = \frac{x + 1}{x - 1}$, find $H \circ H^{-1}$ and $H^{-1}
+            \circ H$ \\
+        \\
+        $H \circ H^{-1}$ \\
+        = $H(\frac{x + 1}{x - 1})$ \hspace{6em} ($\because$ Definition of Composition of
+            Functions) \\
+        = $\frac{\frac{x + 1}{x - 1} + 1}{\frac{x + 1}{x - 1} - 1}$ \hspace{6em} ($\because$
+            Substitution) \\
+        = $\frac{\frac{x + 1}{x - 1} + \frac{x - 1}{x - 1}}{\frac{x + 1}{x - 1} - \frac{x - 1}{x - 1}}$
+            \hspace{6em} ($\because$ 1 = $\frac{x - 1}{x - 1}$) \\
+        = $\frac{\frac{x + 1 + x - 1}{x - 1}}{\frac{x + 1 - (x - 1)}{x - 1}}$
+            \hspace{6em} ($\because$ Adding Fractions) \\
+        = $\frac{2x}{2}$ \hspace{8em} ($\because$ Simplify Fraction) \\
+        = x \\
+        
+        \newpage
+        
+        $H \circ H^{-1}$ \\
+        = $H(\frac{x + 1}{x - 1})$ \hspace{6em} ($\because$ Definition of Composition of
+            Functions) \\
+        = $\frac{\frac{x + 1}{x - 1} + 1}{\frac{x + 1}{x - 1} - 1}$ \hspace{6em} ($\because$
+            Substitution) \\
+        = $\frac{\frac{x + 1}{x - 1} + \frac{x - 1}{x - 1}}{\frac{x + 1}{x - 1} - \frac{x - 1}{x - 1}}$
+            \hspace{6em} ($\because$ 1 = $\frac{x - 1}{x - 1}$) \\
+        = $\frac{\frac{x + 1 + x - 1}{x - 1}}{\frac{x + 1 - (x - 1)}{x - 1}}$
+            \hspace{6em} ($\because$ Adding Fractions) \\
+        = $\frac{2x}{2}$ \hspace{8em} ($\because$ Simplify Fraction) \\
+        = x \\
+        \\
+        Since $H \circ H^{-1}$ and $H \circ H^{-1}$ both result in the identity function,
+        they are inverses of eachother.
+
+\end{itemize}
+
+\section*{Problem Set 8}
+\begin{itemize}
+    \item [27.]
+        Yes, this is true. Firstly there must be a one to one correspondance between f
+        and g since their inverses are defined. \\
+        \\
+        If $C \in Z$, and since $g: Y \rightarrow Z$, then there exists a y, where
+        $y \in Y$ such that g(y) = C. \\
+        \\
+        The inverse of this is $g^{-1}(C) = y$ \\
+        \\
+        Also for f, there is similarly also a $y = f(x)$ and $x = f^{-1}(y)$, where
+            $x \in X$ and $y \in Y$ \\
+        \\
+        If we substitute this into $(g \circ f)(x)$ , we get: \\
+        g(f(x)) = g(y) = C. \\
+        If we take the inverse of this, we get: $(g \circ f)^{-1}(C) = x$. \\
+        \\
+        Now we want to prove that $(f^{-1} \circ g^{-1})(C) = x$. \\
+        $(f^{-1} \circ g^{-1})(x) = f^{-1}(g^{-1}(C)) = f^{-1}(y) = x$. \\
+        \\
+        Since both $(f^{-1} \circ g^{-1})(C) = x$ and $(g \circ f)^{-1}(C) = x$, this
+        statement is true.
+
+\end{itemize}
+
+\section*{Problem Set 9}
+\begin{itemize}
+    \item [12.]
+        If S and W have the same cardinality, there needs to be a one-to-one correspondance
+        between S and W. Let us define a function f, where $f: S \rightarrow W,
+        f(x) = (b - a)x + a$ \\
+        \\
+        Suppose $f(x_1) = f(x_2)$, where $x_1, x_2 \in S$ \\
+        $(b - a)x_1 + a = (b - a)x_2 + a$ \hspace{3em} ($\because$ Defined by f) \\
+        = $(b - a)x_1 = (b - a)x_2$ \hspace{5em} ($\because$ Subtract both sides by a) \\
+        = $x_1 = x_2$ \hspace{10em} ($\because$ Divide both sides by (b - a)) \\
+        $\therefore$ f is one=to-one. \\
+        \\
+        Suppose $y \in W$ and $x = \frac{y - a}{b - a}$. \\
+        Since $a < y < b$, $0 < y - a < b - a$ \hspace{3em} ($\because$ Subtract by a) \\
+        $0 < \frac{y - a}{b - a} < 1$ \hspace{10em} ($\because$ Divide by b - a) \\
+        $x \in S$ \hspace{14em} ($\because$ $0 < \frac{y - a}{b - a} < 1$) \\
+        Thus, $f(x) = (b - a)(\frac{y - a}{b - a}) - a$. \\
+        = y - a - a \hspace{10em} ($\because$ Cancel out b - a) \\
+        = y \hspace{10em} ($\because$ Subtraction) \\
+        \\
+        Since f is a one to one correspondance between S and W, this means that S and
+        W have the same cardinality.
+
+\end{itemize}
+
+\section*{Problem Set 10}
+\begin{itemize}
+    \item [20.]
+        \begin{enumerate}
+            \item
+                $f(x) = 5x$. Every x value has an integer output, but only multiples of 5
+                have a corresponding input value.
+            \item 
+                $f(x) = x^2$. Every x value input has an integer output, but only perfect squares
+                have a corresponding input value.
+        \end{enumerate}
+
+    \item [21.]
+        \begin{enumerate}
+            \item 
+                $f(x) = \frac{x}{5}$. Every output value has a corresponding input value (2
+                times that number), while not every input value has an integer output (ex: 1).
+            \item 
+                $f(x) = \sqrt{x}$. Every output value has a corresponding input value (that
+                number squared), while not every input value has an integer output (ex: 2).
+        \end{enumerate}
+
+\end{itemize}
+
+\end{document}
